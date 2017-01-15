@@ -12,6 +12,15 @@ class GameWindow < Gosu::Window
   def draw
   end
 
+  def button_down(id)
+    close if id == Gosu::KbEscape
+
+  end
+
+  def button_up
+    
+  end
+
   def caption
     'Game Window Caption'
   end
